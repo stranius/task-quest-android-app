@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.payto.taskquest.MainActivity"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/blurry_background"
+            android:id="@+id/imageView2" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:background="@drawable/profile_picture_outline"
+            tools:layout_editor_absoluteY="24dp"
+            tools:layout_editor_absoluteX="113dp"
+            android:layout_marginTop="51dp"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/profilePic"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/profile_pic_ex"
+            android:layout_above="@+id/title"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payton Fisher"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            tools:layout_editor_absoluteY="208dp"
+            tools:layout_editor_absoluteX="191dp"
+            android:layout_below="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="App Developer"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            tools:layout_editor_absoluteY="208dp"
+            tools:layout_editor_absoluteX="191dp"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/exp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 / 1000 Exp"
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            tools:layout_editor_absoluteY="208dp"
+            tools:layout_editor_absoluteX="191dp"
+            android:layout_below="@+id/subtitle"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="11dp" />
+
+        <ProgressBar
+            android:id="@+id/levelProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:progressTint="#35fffc"
+            android:progress="0"
+            tools:layout_editor_absoluteY="224dp"
+            tools:layout_editor_absoluteX="0dp"
+            android:layout_marginTop="14dp"
+            android:layout_below="@+id/subtitle" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:alpha=".7"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/levelProgress"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/bar" />
+
+        <ImageButton
+            android:id="@+id/addTask"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/add_task"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="275dp" />
+
+        <ImageButton
+            android:id="@+id/shop"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/shop"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="200dp"
+            android:layout_marginEnd="28dp"
+            android:layout_alignTop="@+id/addTask"
+            android:layout_toStartOf="@+id/button2" />
+
+        <ImageButton
+            android:id="@+id/honors"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/honors"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="200dp"
+            android:layout_marginStart="24dp"
+            android:layout_alignTop="@+id/addTask"
+            android:layout_toEndOf="@+id/button2" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/taskScroller"
+        style="@android:style/Widget.Holo.ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="336dp">
+
+        <LinearLayout
+            android:id="@+id/tasksHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

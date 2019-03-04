@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:foreground = "?android:attr/selectableItemBackground"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/warriorPick"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="189dp"
+        android:background="@drawable/warrior_class_select"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/warrior_class_select" />
+
+    <ImageButton
+        android:id="@+id/sorcererPick"
+        android:layout_width="match_parent"
+        android:layout_height="189dp"
+        android:background="@drawable/sorcerer_class_select"
+        android:elevation="0dp"
+        android:scaleType="centerCrop"
+        style="?android:borderlessButtonStyle"
+        app:srcCompat="@drawable/sorcerer_class_select" />
+
+    <ImageButton
+        android:id="@+id/roguePick"
+        android:layout_width="match_parent"
+        android:layout_height="189dp"
+        android:background="@drawable/rogue_class_select"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/rogue_class_select" />
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/taskTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:text="Jogging"
+        android:layout_marginStart="65dp"
+        android:layout_alignBottom="@+id/box"
+        android:layout_marginBottom="36dp" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/jogging_icon"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp" />
+
+    <ImageView
+        android:id="@+id/circle1"
+        android:layout_width="8dp"
+        android:layout_height="10dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/circle"
+        android:layout_marginStart="235dp"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:id="@+id/Info1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:text="30 Minutes"
+        android:layout_marginStart="255dp"
+        android:layout_marginTop="25dp" />
+
+    <ImageView
+        android:id="@+id/circle2"
+        android:layout_width="8dp"
+        android:layout_height="10dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/circle"
+        android:layout_marginStart="235dp"
+        android:layout_marginTop="46dp" />
+
+    <TextView
+        android:id="@+id/Info2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:text="Daily Task"
+        android:layout_marginStart="255dp"
+        android:layout_marginTop="43dp" />
+
+    <ImageView
+        android:id="@+id/circle3"
+        android:layout_width="8dp"
+        android:layout_height="10dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/circle"
+        android:layout_marginStart="235dp"
+        android:layout_marginTop="64dp" />
+
+    <TextView
+        android:id="@+id/Info3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:text="50 Points"
+        android:layout_marginStart="255dp"
+        android:layout_marginTop="61dp" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@null"
+        app:srcCompat="@drawable/rectangle_box"
+        android:scaleType="centerInside"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/box" />
+</RelativeLayout>
